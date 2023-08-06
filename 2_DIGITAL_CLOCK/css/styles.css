@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@300&display=swap');
+
+@font-face {
+    font-family: digital-7;
+    src: url('digital-7.ttf');
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height:100vh;
+    width:100vw;
+    background-color: rgb(77, 0, 165);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+user-select: none;
+gap:50px;
+}
+h2{
+    color:white;
+    font-size: 50px;
+    font-weight: 500;
+
+}
+.frame{
+    width: 600px;
+    height:300px;
+    background-color: rgb(123, 81, 163);
+    border: 50px solid violet;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    color:black;
+    font-size: 6em;
+    text-align: center;
+    line-height: 180px;
+    letter-spacing: 2px;
+   
+}
+.clock{
+    font-family: digital-7;
+    text-shadow: 0 0 20px rgb(77, 0, 165);
+}

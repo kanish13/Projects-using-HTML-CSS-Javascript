@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(10, 10, 34);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.analog-clock{
+    width: 500px;
+    height:500px;
+    background-color: white;
+    border-radius: 50%;
+    border: 10px solid rgb(1, 228, 228);
+    position: relative;
+}
+.analog-clock::before{
+    content:"Timex";
+    color:rgb(10, 10, 34) ;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+font-size: 20px;
+font-weight:bold
+}
+.analog-clock::after{
+    content:"";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(10, 10, 34);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+.number{
+    --rotate:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(10, 10, 34);
+    transform: rotate(var(--rotate));
+}
+.number-1{--rotate:30deg}
+.number-2{--rotate:60deg}
+.number-3{--rotate:90deg}
+.number-4{--rotate:120deg}
+.number-5{--rotate:150deg}
+.number-6{--rotate:180deg}
+.number-7{--rotate:210deg}
+.number-8{--rotate:240deg}
+.number-9{--rotate:270deg}
+.number-10{--rotate:300deg}
+.number-11{--rotate:330deg}
+
+.needle{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+    z-index: 8;
+    border-top-left-radius: 50% ;
+    border-top-right-radius: 50%;
+    transform: translateX(-50%) rotate(calc(var(--rotate)*1deg));
+}
+.hrs{
+    background-color: black;
+    width: 10px;
+    height: 25%;
+    --rotate:75;
+}
+.sec{
+    background-color: black;
+    width: 3px;
+    height: 45%;
+    --rotate:30;
+}
+.min{
+    background-color: black;
+    width:7px;
+    height:40%;
+    --rotate:60;
+}
+
