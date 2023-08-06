@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+overflow-y: hidden;
+overflow-x: hidden;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 34px;
+    font-size: 50px;
+}
+button{
+    margin: 0 10px;
+    padding: 5px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+h1{
+    color: rgb(49, 49, 49);
+}
+.no{
+color: green;
+}
