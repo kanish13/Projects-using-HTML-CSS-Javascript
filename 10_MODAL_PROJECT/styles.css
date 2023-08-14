@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+body{
+    background: url("code.jpg");   
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content{
+
+    background-color: white;
+    height: 250px;
+    width: 500px;
+    border-radius: 50px;
+  
+
+}
+.container{
+    background-color: white;
+    height: 250px;
+    width: 500px;
+    border-radius: 50px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    gap:40px;
+    letter-spacing: 2px;
+    
+}
+.main h1{
+    margin-bottom: 40px;
+}
+button{
+    border-style: none;
+    border-color: violet;
+    background-color: violet;
+    padding: 10px;
+    border-radius: 50px;
+}
+.over{
+    
+ position:fixed;
+    background-color:rgb(255, 255, 255,0.5);
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hidden{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    gap:40px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+@media (max-width:555px){
+    body{
+        background-position: center;
+    }
+    .container{
+        margin: 0 3rem;
+    }
+    
+.main{
+    gap:10px;
+    height: 29vh;
+    align-items: center;
+
+}
+.content{
+    margin: 0 4rem;
+}
+.hidden{
+    align-items: center;
+    height: 30vh;
+}
+
+}
