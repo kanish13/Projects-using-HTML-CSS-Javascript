@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans&family=Nunito+Sans:opsz,wght@6..12,600&family=Pacifico&family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+ color: white;
+ overflow-x: hidden;
+}
+h1{
+    
+    font-family: 'Caprasimo', cursive;
+    color:#974EC3;
+    letter-spacing: 0.5rem;
+    
+    
+}
+body{
+    background-color: #060d3a;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 60px;
+    margin-top: 2rem;
+   
+    
+}
+button{
+  margin-right: 30px;
+  
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 300px 300px 300px;
+    margin-bottom: 200px;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    
+}
+.i{
+    display: grid;
+    grid-template-columns: 170px auto auto;
+    grid-template-rows: auto auto;
+    background-color: #060d3a;
+    border: 1px solid so;
+    padding: 20px;
+    
+}
+.filter{
+    display: flex;
+    margin-left: 2rem;
+}
+.x{
+   
+    background-color: #060d3a;
+    border: 1px solid #060d3a;
+    padding: 20px;
+    overflow: hidden;
+
+}
+.img{
+    display: grid;
+grid-row: 1/3;
+align-items: center;
+}
+img{
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: 120px;
+    border-radius: 10px;
+    
+}
+.iname{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.iprice{
+text-align: center;
+}
+.idesc{
+    grid-column: 2/4;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    
+}
+button{
+    background-color: violet;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid violet;
+   padding: 10px;
+   letter-spacing: 3px;
+   border-radius: 10px;
+
+}
+
+
+@media (max-width:1093px) {
+    
+.grid-container{
+    grid-template-columns: auto;
+}
+
+
+}
+@media (max-width:480px) {
+    .filter{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+   button{
+    margin-bottom: 5px;
+   }
+    .img{
+        display: grid;
+       grid-column: 1/span 3;
+       height: 130px;
+       justify-content: center;
+    }
+    .iname{
+        display: grid;
+        grid-column: 1/span 2;
+        grid-row: 3;
+        justify-content: start;
+    }
+    .iprice{
+        display: grid;
+        justify-content: end;
+        grid-column: 2/span 2;
+        grid-row: 3;
+    }
+    .idesc{
+        grid-column: 1/span 3;
+        grid-row: 4;
+        grid-template-rows: auto;
+        font-size: 0.6em;
+    }
+
+
+}
